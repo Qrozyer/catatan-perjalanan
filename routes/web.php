@@ -36,4 +36,5 @@ require __DIR__.'/auth.php';
 // get, post, put, delete
 Route::get('/home', [CatatanPerjalananController::class, 'index'])->name('home');
 Route::get('/input', [CatatanPerjalananController::class, 'create'])->name('input');
-Route::post('/input-store',[CatatanPerjalananController::class, 'store']);
+Route::post('/input-store',[CatatanPerjalananController::class, 'store'])->name('input-store');
+Route::get('/home/{id}', [CatatanPerjalananController::class, 'show'])->name('show');

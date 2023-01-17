@@ -13,6 +13,7 @@
         <p><?="Waktu   :    " . $data->waktu ?></p>
         <p><?="Lokasi  :    " . $data->lokasi ?></p>
         <p><?="Suhu tubuh : " . $data->suhu_tubuh ?></p>
+        <a href="/home/{{ $data->id }}">Detail</a>
         <br>
     @endforeach
 </body>
